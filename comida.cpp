@@ -1,16 +1,29 @@
-/*#include "comida.h"
+#include "comida.h"
 #include <ctime>
 #include <stdlib.h>
+#include <SFML/Graphics.hpp>
 
+using namespace sf;
 comida::comida() {
     posicionX=200;
     posicionY=200;
+    
+    texturaComida.loadFromFile("pelotita.gif");
+    spriteComida.setTexture(texturaComida);
 }
 
 
 
 void comida::dibujar (RenderWindow * w) {
-    numero = rand() % 100 + 1;//hasta+desde
+    spriteComida.setPosition(posicionX,posicionY);
+    w->draw(spriteComida);
+  
 }
 
-*/
+
+//numero = rand() % 100 + 1;//hasta+desde
+
+/*bool comida::detectarColision (&sprite _spritePj1,int posicionPj1X,int posicionPj1Y) {
+	
+}*/
+

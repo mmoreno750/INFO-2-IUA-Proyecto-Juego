@@ -1,9 +1,11 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include "personaje.h"
+#include "comida.h"
 using namespace sf;
 
 int main(int argc, char *argv[]) {
+    comida Comida1;
     personaje PJ1(160,160);
     RenderWindow w(VideoMode(640, 480), "Viborita");
     int posicionActualX=160,posicionActualY=160;
@@ -79,6 +81,8 @@ int main(int argc, char *argv[]) {
         
         PJ1.dibujar( &w, posicionActualX , posicionActualY);
         
+        Comida1.dibujar(&w);
+            
         w.display();
     
         colisionbordedepantalla=PJ1.detectarColisiones();
