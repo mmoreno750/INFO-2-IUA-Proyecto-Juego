@@ -10,6 +10,7 @@ comida::comida() {
     
     texturaComida.loadFromFile("pelotita.gif");
     spriteComida.setTexture(texturaComida);
+    
 }
 
 
@@ -21,9 +22,24 @@ void comida::dibujar (RenderWindow * w) {
 }
 
 
+void comida::obtenerCajaComida( ) {
+    _cajaComida=spriteComida.getGlobalBounds();
+    RectangleShape cajaComida(_cajaComida);// Es una clase(contiene la funcion intersect)
+    if cajaComida.getGlobalBounds()
+}
+
+
+void comida::desaparecer (int posicionViboraX, int posicionViboraY, FloatRect cajaVibora) {
+    if(cajaComida.intersects ())
+}
+
+
+
+
 //numero = rand() % 100 + 1;//hasta+desde
 
 /*bool comida::detectarColision (&sprite _spritePj1,int posicionPj1X,int posicionPj1Y) {
 	
 }*/
+
 

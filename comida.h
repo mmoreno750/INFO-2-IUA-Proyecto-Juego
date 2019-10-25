@@ -6,8 +6,10 @@ class comida {
 private:
     int posicionX;
     int posicionY;
-    bool comido; 
-        
+    FloatRect _cajaComida; //es una variable que contiene el tamanio de la cajaComida.
+    
+    
+    
     Texture texturaComida;
     Sprite spriteComida;
         
@@ -16,8 +18,9 @@ public:
 
     void dibujar(RenderWindow *w);
     
-    //bool detectarColision(&sprite,int ,int);
-    
+    void obtenerCajaComida();
+   
+    void desaparecer();
     
 };
 
