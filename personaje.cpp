@@ -12,80 +12,80 @@ personaje::personaje(int X, int Y ) {
 }
 
 
+void personaje::dibujarCola (RenderWindow * w, int , int ) {
+    if (velocidadX==1){
+    spriteCuerpo.setPosition(posicionX-6,posicionY);
+    w->draw(spriteCuerpo);
+    }
+    if(velocidadX==-1){
+    spriteCuerpo.setPosition(posicionX+6,posicionY);
+    w->draw(spriteCuerpo);
+    }
+    if(velocidadY==1){
+    spriteCuerpo.setPosition(posicionX,posicionY-6);
+    w->draw(spriteCuerpo);
+}
+    if(velocidadY==-1){
+        spriteCuerpo.setPosition(posicionX,posicionY+6);
+        w->draw(spriteCuerpo);
+    }
+    
+}
 
-void personaje::dibujar (RenderWindow *w , int posicionActualX,int posicionActualY) {
-  
-   
+void personaje::dibujar(RenderWindow * w , int posicionActualX,int posicionActualY) {
     spritePJ.setPosition(posicionActualX,posicionActualY);
-  
    w->draw(spritePJ);
-    
-   
-    
-    
 }
-
-
-
-personaje::~personaje() {
-    
-}
-
-
-
 
 int personaje::aumentarPosicionX ( ) {
 	if(velocidadX==1){
-    posicionX+=5;
+    posicionX+=6;
     }
     else{
-    posicionX-=5;
+    posicionX-=6;
     }
     return posicionX;
 }
 
 int personaje::aumentarPosicionY ( ) {
-    posicionY+=5;
+    posicionY+=6;
     return posicionY;
 }
 
 int personaje::decrecerPosicionX ( ) {
-    posicionX-=5;
+    posicionX-=6;
     return posicionX;
 }
 
 int personaje::decrecerPosicionY ( ) {
-    posicionY-=5;
+    posicionY-=6;
     return posicionY;
 }
 
 void personaje::mirarArriba ( ) {
     
-    spritePJ.setOrigin(20,20);
+    spritePJ.setOrigin(6 , 6);
     spritePJ.setRotation(-90);
 }
 
 void personaje::mirarAbajo ( ) {
-    spritePJ.setOrigin(20,20);
+    spritePJ.setOrigin(6 , 6);
     spritePJ.setRotation(90);
 }
 
 void personaje::mirarDerecha ( ) {
-    spritePJ.setOrigin(20,20);
+    spritePJ.setOrigin(6 , 6);
     spritePJ.setRotation(0);
 }
 
 void personaje::mirarIzquierda ( ) {
-    
-    
-    
-    
-    spritePJ.setOrigin(20,20);
+    spritePJ.setOrigin(6 , 6);
     spritePJ.setRotation(180);
+    
 }
 
 bool personaje::detectarColisiones () {
-    if(posicionX<17+20 || posicionX>621-20 || posicionY<64+20 || posicionY>461-20){
+    if(posicionX<17+5 || posicionX>621-5 || posicionY<64+5 || posicionY>461-5){
    return true;
     }
     else{
@@ -93,3 +93,28 @@ bool personaje::detectarColisiones () {
     }
 }
     
+
+int personaje::x ( ) {
+	return posicionX;
+}
+
+int personaje::y ( ) {
+	return posicionY;
+}
+
+void personaje::resetearPJ1XY (int _posicionX, int _posicionY) {
+	posicionX=_posicionX;
+    posicionY=_posicionY;
+    spritePJ.setRotation(0);
+    velocidadX=1;
+    velocidadY=0;
+}
+
+
+
+void personaje::construirCuerpo ( ) {
+    texturaCuerpo.loadFromFile("cuerpovibora.png");
+    spriteCuerpo.setPosition(posicionX-6, posicionY );
+    
+}
+

@@ -6,7 +6,7 @@ class comida {
 private:
     int posicionX;
     int posicionY;
-    FloatRect _cajaComida; //es una variable que contiene el tamanio de la cajaComida.
+    
     
     
     

@@ -6,9 +6,9 @@ using namespace sf;
 
 int main(int argc, char *argv[]) {
     comida Comida1;
-    personaje PJ1(160,160);
+    personaje PJ1(320-40,270);
+    
     RenderWindow w(VideoMode(640, 480), "Viborita");
-    int posicionActualX=160,posicionActualY=160;
     w.setFramerateLimit(30);
     int vidas = 3;
     
@@ -57,22 +57,24 @@ int main(int argc, char *argv[]) {
         w.clear(Color(255, 255, 255, 255));
         
         //---CONDICIONES PARA MOVERSE-------------------------------------------
-            
+            int posicionActualX=PJ1.x();
+            int posicionActualY=PJ1.y();
+                
             if(PJ1.velocidadX==1 && PJ1.velocidadY==0){
-                posicionActualX=PJ1.aumentarPosicionX(); 
+                PJ1.aumentarPosicionX(); 
             }
             
             if(PJ1.velocidadX==-1 && PJ1.velocidadY==0){
-                posicionActualX=PJ1.aumentarPosicionX(); 
+                PJ1.aumentarPosicionX(); 
             }
             
             if(PJ1.velocidadX==0 && PJ1.velocidadY==1){
-                posicionActualY=PJ1.aumentarPosicionY(); 
+                PJ1.aumentarPosicionY(); 
             }
             
         
             if(PJ1.velocidadX==0 && PJ1.velocidadY==-1){
-                posicionActualY=PJ1.decrecerPosicionY(); 
+                PJ1.decrecerPosicionY(); 
             }
         
         //----------------------------------------------------------------------
@@ -81,14 +83,16 @@ int main(int argc, char *argv[]) {
         
         PJ1.dibujar( &w, posicionActualX , posicionActualY);
         
-        Comida1.dibujar(&w);
+        PJ1.dibujarCola(&w, posicionActualX, posicionActualY);
             
         w.display();
     
         colisionbordedepantalla=PJ1.detectarColisiones();
         if (colisionbordedepantalla==1){
             vidas = vidas - 1 ;
-            
+            std::cout<<vidas<<std::endl;
+            sleep(milliseconds(1000));
+            PJ1.resetearPJ1XY(320-40 , 270);
             
             
             if (vidas==0){

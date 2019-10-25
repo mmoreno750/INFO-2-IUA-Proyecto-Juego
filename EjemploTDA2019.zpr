@@ -19,7 +19,7 @@ current_source=main.cpp
 path_char=\
 [source]
 path=main.cpp
-cursor=79:12
+cursor=7:10
 open=true
 [source]
 path=personaje.cpp

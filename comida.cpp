@@ -23,15 +23,15 @@ void comida::dibujar (RenderWindow * w) {
 
 
 void comida::obtenerCajaComida( ) {
-    _cajaComida=spriteComida.getGlobalBounds();
-    RectangleShape cajaComida(_cajaComida);// Es una clase(contiene la funcion intersect)
-    if cajaComida.getGlobalBounds()
+    //_cajaComida=spriteComida.getGlobalBounds();
+  //  RectangleShape cajaComida(_cajaComida);// Es una clase(contiene la funcion intersect)
+//    if cajaComida.getGlobalBounds()
 }
 
 
-void comida::desaparecer (int posicionViboraX, int posicionViboraY, FloatRect cajaVibora) {
-    if(cajaComida.intersects ())
-}
+//void comida::desaparecer (int posicionViboraX, int posicionViboraY, FloatRect cajaVibora) {
+  //  if(cajaComida.intersects ())
+//}
 
 
 

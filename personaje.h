@@ -6,12 +6,16 @@ using namespace sf;
 class personaje {
 
 private:
-    int posicionX=160;
-    int posicionY=160;
-    
+    int posicionX;
+    int posicionY;
     
     Texture texturaPJ;
     Sprite spritePJ;
+    
+    Texture texturaCuerpo;
+    Sprite spriteCuerpo;
+    
+    
     
 public:
     
@@ -19,14 +23,21 @@ public:
     int velocidadY=0;
     
     personaje(int , int);
+    void construirCuerpo();
     
     void dibujar(RenderWindow *w ,int , int);
+    void dibujarCola(RenderWindow *w, int ,int);
+    
+    int x();
+    int y();
+    
     
     int aumentarPosicionX();
     int aumentarPosicionY();
     int decrecerPosicionX();
     int decrecerPosicionY();
-    int resetearPosicionXY();
+    
+    void resetearPJ1XY(int , int);
     
     void mirarAbajo();
     void mirarArriba();
@@ -34,9 +45,9 @@ public:
     void mirarIzquierda();
     
     
+    
     bool detectarColisiones();
     
-    ~personaje();
     
 };
 #endif
