@@ -1,0 +1,3 @@
+C:/Users/mauri/CLionProjects/prueba1/cmake-build-debug/CMakeFiles/proyectoSnake.dir
+C:/Users/mauri/CLionProjects/prueba1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/mauri/CLionProjects/prueba1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
