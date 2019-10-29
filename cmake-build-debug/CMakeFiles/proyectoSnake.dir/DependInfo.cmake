@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/mauri/CLionProjects/prueba1/main.cpp" "C:/Users/mauri/CLionProjects/prueba1/cmake-build-debug/CMakeFiles/proyectoSnake.dir/main.cpp.obj"
-  "C:/Users/mauri/CLionProjects/prueba1/vibora.cpp" "C:/Users/mauri/CLionProjects/prueba1/cmake-build-debug/CMakeFiles/proyectoSnake.dir/vibora.cpp.obj"
+  "C:/Users/mauri/OneDrive/Desktop/Matias/INFO-2-IUA-Proyecto-Juego/main.cpp" "C:/Users/mauri/OneDrive/Desktop/Matias/INFO-2-IUA-Proyecto-Juego/cmake-build-debug/CMakeFiles/proyectoSnake.dir/main.cpp.obj"
+  "C:/Users/mauri/OneDrive/Desktop/Matias/INFO-2-IUA-Proyecto-Juego/vibora.cpp" "C:/Users/mauri/OneDrive/Desktop/Matias/INFO-2-IUA-Proyecto-Juego/cmake-build-debug/CMakeFiles/proyectoSnake.dir/vibora.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

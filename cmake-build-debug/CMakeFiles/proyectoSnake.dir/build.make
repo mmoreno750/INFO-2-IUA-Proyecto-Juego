@@ -42,10 +42,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.2.4\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\mauri\CLionProjects\prueba1
+CMAKE_SOURCE_DIR = C:\Users\mauri\OneDrive\Desktop\Matias\INFO-2-IUA-Proyecto-Juego
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\mauri\CLionProjects\prueba1\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\mauri\OneDrive\Desktop\Matias\INFO-2-IUA-Proyecto-Juego\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/proyectoSnake.dir/depend.make
@@ -58,29 +58,29 @@ include CMakeFiles/proyectoSnake.dir/flags.make
 
 CMakeFiles/proyectoSnake.dir/main.cpp.obj: CMakeFiles/proyectoSnake.dir/flags.make
 CMakeFiles/proyectoSnake.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\mauri\CLionProjects\prueba1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/proyectoSnake.dir/main.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\proyectoSnake.dir\main.cpp.obj -c C:\Users\mauri\CLionProjects\prueba1\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\mauri\OneDrive\Desktop\Matias\INFO-2-IUA-Proyecto-Juego\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/proyectoSnake.dir/main.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\proyectoSnake.dir\main.cpp.obj -c C:\Users\mauri\OneDrive\Desktop\Matias\INFO-2-IUA-Proyecto-Juego\main.cpp
 
 CMakeFiles/proyectoSnake.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proyectoSnake.dir/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mauri\CLionProjects\prueba1\main.cpp > CMakeFiles\proyectoSnake.dir\main.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mauri\OneDrive\Desktop\Matias\INFO-2-IUA-Proyecto-Juego\main.cpp > CMakeFiles\proyectoSnake.dir\main.cpp.i
 
 CMakeFiles/proyectoSnake.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proyectoSnake.dir/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mauri\CLionProjects\prueba1\main.cpp -o CMakeFiles\proyectoSnake.dir\main.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mauri\OneDrive\Desktop\Matias\INFO-2-IUA-Proyecto-Juego\main.cpp -o CMakeFiles\proyectoSnake.dir\main.cpp.s
 
 CMakeFiles/proyectoSnake.dir/vibora.cpp.obj: CMakeFiles/proyectoSnake.dir/flags.make
 CMakeFiles/proyectoSnake.dir/vibora.cpp.obj: ../vibora.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\mauri\CLionProjects\prueba1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/proyectoSnake.dir/vibora.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\proyectoSnake.dir\vibora.cpp.obj -c C:\Users\mauri\CLionProjects\prueba1\vibora.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\mauri\OneDrive\Desktop\Matias\INFO-2-IUA-Proyecto-Juego\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/proyectoSnake.dir/vibora.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\proyectoSnake.dir\vibora.cpp.obj -c C:\Users\mauri\OneDrive\Desktop\Matias\INFO-2-IUA-Proyecto-Juego\vibora.cpp
 
 CMakeFiles/proyectoSnake.dir/vibora.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proyectoSnake.dir/vibora.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mauri\CLionProjects\prueba1\vibora.cpp > CMakeFiles\proyectoSnake.dir\vibora.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mauri\OneDrive\Desktop\Matias\INFO-2-IUA-Proyecto-Juego\vibora.cpp > CMakeFiles\proyectoSnake.dir\vibora.cpp.i
 
 CMakeFiles/proyectoSnake.dir/vibora.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proyectoSnake.dir/vibora.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mauri\CLionProjects\prueba1\vibora.cpp -o CMakeFiles\proyectoSnake.dir\vibora.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mauri\OneDrive\Desktop\Matias\INFO-2-IUA-Proyecto-Juego\vibora.cpp -o CMakeFiles\proyectoSnake.dir\vibora.cpp.s
 
 # Object files for target proyectoSnake
 proyectoSnake_OBJECTS = \
@@ -99,7 +99,7 @@ proyectoSnake.exe: C:/MinGW/lib/libsfml-system-d.a
 proyectoSnake.exe: CMakeFiles/proyectoSnake.dir/linklibs.rsp
 proyectoSnake.exe: CMakeFiles/proyectoSnake.dir/objects1.rsp
 proyectoSnake.exe: CMakeFiles/proyectoSnake.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\mauri\CLionProjects\prueba1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable proyectoSnake.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\mauri\OneDrive\Desktop\Matias\INFO-2-IUA-Proyecto-Juego\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable proyectoSnake.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\proyectoSnake.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -112,6 +112,6 @@ CMakeFiles/proyectoSnake.dir/clean:
 .PHONY : CMakeFiles/proyectoSnake.dir/clean
 
 CMakeFiles/proyectoSnake.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\mauri\CLionProjects\prueba1 C:\Users\mauri\CLionProjects\prueba1 C:\Users\mauri\CLionProjects\prueba1\cmake-build-debug C:\Users\mauri\CLionProjects\prueba1\cmake-build-debug C:\Users\mauri\CLionProjects\prueba1\cmake-build-debug\CMakeFiles\proyectoSnake.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\mauri\OneDrive\Desktop\Matias\INFO-2-IUA-Proyecto-Juego C:\Users\mauri\OneDrive\Desktop\Matias\INFO-2-IUA-Proyecto-Juego C:\Users\mauri\OneDrive\Desktop\Matias\INFO-2-IUA-Proyecto-Juego\cmake-build-debug C:\Users\mauri\OneDrive\Desktop\Matias\INFO-2-IUA-Proyecto-Juego\cmake-build-debug C:\Users\mauri\OneDrive\Desktop\Matias\INFO-2-IUA-Proyecto-Juego\cmake-build-debug\CMakeFiles\proyectoSnake.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/proyectoSnake.dir/depend
 

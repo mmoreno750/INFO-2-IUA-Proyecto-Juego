@@ -1,9 +1,19 @@
 #include <iostream>
+#include "vibora.h"
 #include <SFML/Graphics.hpp>
 using namespace sf;
 int main() {
-    RenderWindow pantalla(VideoMode(640,420), "ProyectoSnake");
+    RenderWindow pantalla(VideoMode(640,480), "ProyectoSnake");
     pantalla.setFramerateLimit(30);
+
+    Texture tFondoDePantalla;
+    Sprite sFondoDePantalla;
+    tFondoDePantalla.loadFromFile("IMAGENES/fondodepantalla.png");
+    sFondoDePantalla.setTexture(tFondoDePantalla);
+    vibora jugador;
+
+
+
 
 
     while (pantalla.isOpen()) {
@@ -12,11 +22,19 @@ int main() {
             if (e.type == Event::Closed)
                 pantalla.close();
         }
+        pantalla.display();
+        pantalla.draw(sFondoDePantalla);
+        jugador.constructor(&pantalla);
+        //jugador.dibujar( &pantalla, 0);
 
-        pantalla.clear(Color(255,255,0,255));
+
     }
     
 
-    std::cout << "Hello, Tinchox" << std::endl;
+
+
+
+    system("pause");
+
     return 0;
 }

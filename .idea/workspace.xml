@@ -11,7 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41d7330e-e5fb-478b-86b3-7559299898c0" name="Default Changelist" comment="" />
+    <list default="true" id="86adb544-b47f-4ecd-bc4e-fc0e5c5bc3a3" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +21,26 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
-  <component name="ProjectId" id="1SlG54yqJ1JmpY0aq7iDSwEBBYC" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1SsgjraLnWdOlKlxfWtus6xuZHV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -31,7 +49,8 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -46,7 +65,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="proyectoSnake" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="proyectoSnake" TARGET_NAME="proyectoSnake" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="proyectoSnake" RUN_TARGET_NAME="proyectoSnake">
+    <configuration name="proyectoSnake" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://./" PASS_PARENT_ENVS_2="true" PROJECT_NAME="proyectoSnake" TARGET_NAME="proyectoSnake" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="proyectoSnake" RUN_TARGET_NAME="proyectoSnake">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -57,17 +76,33 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="41d7330e-e5fb-478b-86b3-7559299898c0" name="Default Changelist" comment="" />
-      <created>1572130584915</created>
+      <changelist id="86adb544-b47f-4ecd-bc4e-fc0e5c5bc3a3" name="Default Changelist" comment="" />
+      <created>1572357855600</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1572130584915</updated>
-      <workItem from="1572130599651" duration="1597000" />
-      <workItem from="1572132857567" duration="3204000" />
+      <updated>1572357855600</updated>
+      <workItem from="1572357857190" duration="302000" />
+      <workItem from="1572358290567" duration="476000" />
+      <workItem from="1572358843446" duration="1517000" />
+      <workItem from="1572360431653" duration="2196000" />
+      <workItem from="1572362730256" duration="3308000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

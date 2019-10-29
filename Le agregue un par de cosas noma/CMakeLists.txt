@@ -1,7 +1,0 @@
-cmake_minimum_required(VERSION 3.15)
-project(proyectoSnake)
-
-set(CMAKE_CXX_STANDARD 17)
-find_package(SFML 2.5 COMPONENTS system window graphics)
-add_executable(proyectoSnake main.cpp vibora.cpp vibora.h)
-target_link_libraries(proyectoSnake sfml-system sfml-graphics)

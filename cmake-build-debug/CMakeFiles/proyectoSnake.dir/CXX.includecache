@@ -6,9 +6,15 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/mauri/CLionProjects/prueba1/main.cpp
+C:/Users/mauri/OneDrive/Desktop/Matias/INFO-2-IUA-Proyecto-Juego/main.cpp
 iostream
 -
+vibora.h
+C:/Users/mauri/OneDrive/Desktop/Matias/INFO-2-IUA-Proyecto-Juego/vibora.h
+SFML/Graphics.hpp
+-
+
+C:/Users/mauri/OneDrive/Desktop/Matias/INFO-2-IUA-Proyecto-Juego/vibora.h
 SFML/Graphics.hpp
 -
 
