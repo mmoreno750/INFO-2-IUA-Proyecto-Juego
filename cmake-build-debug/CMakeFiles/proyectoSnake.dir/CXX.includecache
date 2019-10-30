@@ -6,13 +6,11 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/mauri/OneDrive/Desktop/Matias/INFO-2-IUA-Proyecto-Juego/main.cpp
-iostream
+C:/Users/mauri/OneDrive/Desktop/Matias/INFO-2-IUA-Proyecto-Juego/vibora.cpp
+SFML/Graphics.hpp
 -
 vibora.h
 C:/Users/mauri/OneDrive/Desktop/Matias/INFO-2-IUA-Proyecto-Juego/vibora.h
-SFML/Graphics.hpp
--
 
 C:/Users/mauri/OneDrive/Desktop/Matias/INFO-2-IUA-Proyecto-Juego/vibora.h
 SFML/Graphics.hpp

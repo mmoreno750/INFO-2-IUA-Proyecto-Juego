@@ -19,12 +19,12 @@ private:
      struct movimiento{
          float posicionX;   //Para la "telestransportacion de la vibora".
          float posicionY;
-               movimiento *sig;
-        }*frente, *fondo;
+         movimiento *sig;
+        }frente, fondo;
 
 public:
     void constructor(RenderWindow *);
-    void dibujar(RenderWindow *, movimiento *);
+    void dibujar(RenderWindow *);
     void moverse( RenderWindow *pantalla, int );
 
 };

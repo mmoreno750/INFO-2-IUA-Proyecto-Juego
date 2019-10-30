@@ -6,58 +6,56 @@
 using namespace sf;
 
 void vibora::constructor(RenderWindow *pantalla ) {
-    frente = new movimiento;
-    frente->posicionX=240;
-    frente->posicionY=320;
-    frente->sig=NULL;
-    fondo = new movimiento;
+    frente.posicionX=320;
+    frente.posicionY=240;
+    frente.sig=NULL;
+    fondo = frente;
     fondo = frente;
     tVibora.loadFromFile("IMAGENES/SNAKE.png");
     sVibora.setTexture(tVibora);
-    sVibora.setOrigin(frente->posicionX, frente->posicionY);
-    pantalla->draw(sVibora);
-   // dibujar(pantalla, frente);
-}
-
-void vibora::dibujar(RenderWindow* pantalla, movimiento *aux) {
-
-    /*}else{
-        do{
-            sVibora.setOrigin(aux->posicionX, aux->posicionY);
-            pantalla->draw(sVibora);
-            aux=aux->sig;
-        }while (aux->sig!=NULL);
-    }*/
-
+    dibujar(pantalla);
 
 }
 
-/*void vibora::moverse(RenderWindow *pantalla, int direc) {
-    movimiento *aux = new movimiento;
-    int x, y, x2, y2;
-    aux = frente;
-    frente = new movimiento;
+void vibora::dibujar(RenderWindow* pantalla) {
 
-    switch (direc){
-        case 0://Derecha
-        frente->posicionX= frente->posicionX + 10;
-        sVibora.setOrigin(frente->posicionX, frente->posicionY);
-        pantalla->draw(sVibora);
-        while(aux->sig!=NULL){
-            x = aux->posicionX;
-            y = aux->posicionY;
-            aux = aux->sig;
-            aux->posicionY=y;
-            aux->posicionX=x;
-            sVibora.setOrigin(aux->posicionX, aux->posicionY);
+    movimiento aux1 = frente;
+
+
+        if (aux1.sig==NULL) {
+            sVibora.setPosition(aux1.posicionX, aux1.posicionY);     //Esto seria la cola. No
+            pantalla->draw(sVibora);                                 //se si hay un error, pero medio q no anda.
+                                                                     //No dibuja bien.
+        }
+        while (aux1.sig!=NULL){
+            sVibora.setPosition(aux1.posicionX, aux1.posicionY);
             pantalla->draw(sVibora);
-
+            aux1 = *aux1.sig;
+            sleep(milliseconds(1000));
         }
 
 
-            delete aux;
+}
+
+void vibora::moverse(RenderWindow *pantalla, int direccion) {
+    movimiento aux = fondo;
+    frente = *frente.sig;
+    fondo = *fondo.sig;
+    frente.sig=NULL;
+
+    
+    switch (direccion){
+        case 1:
+            frente.posicionX=frente.posicionX+10; //Derecha
+            break;
+        case 0:
+            frente.posicionX=frente.posicionX-10;  //Izquierda
+            break;
+        case 3:
+            frente.posicionY=frente.posicionY-10; //ABAJO
+            break;
+        case 2:
+            frente.posicionY=frente.posicionY+10; //ARRIBA
             break;
     }
-
-
-}*/
+}
