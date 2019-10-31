@@ -12,6 +12,7 @@ int main() {
     sFondoDePantalla.setTexture(tFondoDePantalla);
     vibora jugador;
     int direccion=1; // 1 derecha - 2 arriba - 3 abajo - 0 izquierda
+    jugador.constructor(&pantalla);
 
 
 
@@ -25,27 +26,34 @@ int main() {
                 pantalla.close();
         }
 
-        jugador.constructor(&pantalla);
 
-        if (Keyboard::isKeyPressed(Keyboard::A) && direccion!=1){
-            direccion=0;
+        if (Keyboard::isKeyPressed(Keyboard::D) && direccion!=1){
+            direccion = 0;
+
+
         }
-        if (Keyboard::isKeyPressed(Keyboard::D) && direccion!=0){
-            direccion=1;
+        if (Keyboard::isKeyPressed(Keyboard::A) && direccion!=0){
+            direccion = 1;
+
         }
-        if (Keyboard::isKeyPressed(Keyboard::S) && direccion!=2){
-            direccion=3;
+        if (Keyboard::isKeyPressed(Keyboard::W) && direccion!=2){
+            direccion = 2;
+
         }
-        if (Keyboard::isKeyPressed(Keyboard::W) && direccion!=3){
-         direccion=2;
+        if (Keyboard::isKeyPressed(Keyboard::S) && direccion!=3){
+            direccion = 3;
+
+        }
+        if (Keyboard::isKeyPressed(Keyboard::Space)){
+
         }
         std::cout<<direccion<<std::endl;
-        pantalla.clear();
-        jugador.moverse(&pantalla,direccion);
+        jugador.moverse(direccion);
         pantalla.draw(sFondoDePantalla);
         jugador.dibujar(&pantalla);
         pantalla.display();
-        //pantalla.clear();
+        pantalla.clear();
+
 
 
 

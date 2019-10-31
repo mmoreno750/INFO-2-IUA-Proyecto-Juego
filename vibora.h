@@ -25,7 +25,8 @@ private:
 public:
     void constructor(RenderWindow *);
     void dibujar(RenderWindow *);
-    void moverse( RenderWindow *pantalla, int );
+    void moverse(int);
+    void crecer(RenderWindow *);
 
 };
 
